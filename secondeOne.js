@@ -80,3 +80,16 @@ const firstHalf = (str) => str.slice(0, str.length / 2);
 console.log(firstHalf("lllala"));
 console.log(firstHalf("shurovi"));
 console.log(firstHalf("valobashi"));
+
+
+/*
+    Write a JavaScript program to concatenate two strings
+    except their first character.
+*/
+const concatenater = (str, str2) =>
+  str.slice(1, str.length) + str2.slice(1, str2.length);
+console.log(concatenater("alal", "adalan"));
+console.log(concatenater("aval", "aobashi"));
+console.log(concatenater("atom", "aake"));
+//Another Solution
+const concatenate = (str3, str4) => str3.slice(1) + str4.slice(1);
