@@ -93,3 +93,51 @@ console.log(concatenater("aval", "aobashi"));
 console.log(concatenater("atom", "aake"));
 //Another Solution
 const concatenate = (str3, str4) => str3.slice(1) + str4.slice(1);
+
+
+/*
+    Given two values, write a javascript program to find
+    out which one is nearst to 100
+*/
+
+const nearestToHundred = (a, b) => {
+  if (Math.abs(a - 100) < Math.abs(b - 100)) {
+    return a;
+  } else if (Math.abs(a - 100) > Math.abs(b - 100)) {
+    return b;
+  } else {
+    console.log("Both are same");
+  }
+};
+console.log(nearestToHundred(10, 22));
+console.log(nearestToHundred(80, -112));
+console.log(nearestToHundred(22, 22));
+
+// Another Solution
+
+const closestTo100 = (a, b) => (100 - a < 100 - b ? a : b);
+/*
+    Given two values, write a javascript program to find
+    out which one is nearst to 100
+*/
+
+const nearestToHundred = (a, b) => {
+  if (Math.abs(a - 100) < Math.abs(b - 100)) {
+    return a;
+  } else if (Math.abs(a - 100) > Math.abs(b - 100)) {
+    return b;
+  } else {
+    console.log("Both are same");
+  }
+};
+console.log(nearestToHundred(10, 22));
+console.log(nearestToHundred(80, -112));
+console.log(nearestToHundred(22, 22));
+
+// Another Solution
+
+const closestTo100 = (a, b) => (100 - a < 100 - b ? a : b);
+
+
+
+
