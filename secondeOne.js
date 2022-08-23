@@ -139,5 +139,23 @@ console.log(nearestToHundred(22, 22));
 const closestTo100 = (a, b) => (100 - a < 100 - b ? a : b);
 
 
+/*
+    Write a javaScript program to check a given string contains
+    2 to 4 occurrences of a specified character.
+*/
+const occurrences = (str, char) =>
+  str.split("").filter((ch) => ch === char).length;
+
+const contains2to4 = (str, char) =>
+  occurrences(str, char) >= 2 && occurrences(str, char) <= 4;
+console.log(contains2to4("jan", "j"));
+console.log(contains2to4("fafa", "f"));
+console.log(contains2to4("fallmilial", "l"));
+console.log(contains2to4("fallmilllial", "l"));
+
+
+
+
+
 
 
