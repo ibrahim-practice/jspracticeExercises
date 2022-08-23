@@ -45,3 +45,27 @@ console.log(formatDate());
 const addNew = (str) => (str.indexOf("New!") === 0 ? str : `New!${str}`);
 console.log(addNew("shuroviv"));
 console.log(addNew("New!Year"));
+
+/*
+Write a javascript program to create a new string from a 
+given string taking the first 3 characters and the last 3 
+characters of a string and adding them together. The string 
+and adding them together. The string length must be 3 or 
+more, if not, the original strign is returned. 
+*/
+const createString = (str) => {
+  if (str.length >= 3) {
+    return str.substring(0, 3) + str.substring(str.length - 3);
+  }
+  return str;
+};
+console.log(createString("jan"));
+console.log(createString("fa"));
+console.log(createString("familial"));
+// Another solution
+
+const makeNewString = (str) =>
+  str.length < 3 ? str : str.slice(0, 3) + str.slice(-3);
+console.log(makeNewString("jan"));
+console.log(makeNewString("fa"));
+console.log(makeNewString("familial"));
