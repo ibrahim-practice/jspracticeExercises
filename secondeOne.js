@@ -35,3 +35,13 @@ const formatDate = (date = new Date()) => {
   return `${days}/${months}/${years}`;
 };
 console.log(formatDate());
+
+/*
+ Write a javascript program to create a new string adding
+ "New!" in front of a given string. If the given begins with
+ "New!" already then return the original string.
+ */
+
+const addNew = (str) => (str.indexOf("New!") === 0 ? str : `New!${str}`);
+console.log(addNew("shuroviv"));
+console.log(addNew("New!Year"));
