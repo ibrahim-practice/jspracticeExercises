@@ -69,3 +69,14 @@ const makeNewString = (str) =>
 console.log(makeNewString("jan"));
 console.log(makeNewString("fa"));
 console.log(makeNewString("familial"));
+
+/*
+    Write a javaScript program to extract the first half of 
+    a strign of even length.
+*/
+
+const firstHalf = (str) => str.slice(0, str.length / 2);
+
+console.log(firstHalf("lllala"));
+console.log(firstHalf("shurovi"));
+console.log(firstHalf("valobashi"));
