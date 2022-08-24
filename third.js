@@ -93,3 +93,14 @@ console.log(largestNumber([15, 44, 2, 31, 28]));
 const replaceFirstDigit = (str) => str.replace(/[0-9]/, "$");
 
 console.log(replaceFirstDigit("qsfhdfh4dfsq8"));
+
+
+/*
+    Given a year, report if it is a leap year
+*/
+
+const leapYear = (str) => (str % 4 == 0 && str % 100 != 0) || str % 400 == 0;
+
+console.log(leapYear("2004"));
+console.log(leapYear("2006"));
+console.log(leapYear("2020"));
