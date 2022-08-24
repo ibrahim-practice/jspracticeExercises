@@ -76,4 +76,10 @@ console.log(largestNumber([15, 19, 32, 31, 28]));
 console.log(largestNumber([15, 44, 2, 31, 28]));
 
 
+// Another Solutions
+
+const largestNumber = (arr) => Math.max(...arr.filter((num) => num % 2 === 0));
+console.log(largestNumber([15, 19, 2, 31, 27]));
+console.log(largestNumber([15, 19, 32, 31, 28]));
+console.log(largestNumber([15, 44, 2, 31, 28]));
 
