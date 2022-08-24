@@ -83,3 +83,13 @@ console.log(largestNumber([15, 19, 2, 31, 27]));
 console.log(largestNumber([15, 19, 32, 31, 28]));
 console.log(largestNumber([15, 44, 2, 31, 28]));
 
+
+/*
+    Write a javascript program to replace the first digit 
+    in a string( should contain at least digit) with $ 
+    character.
+*/
+
+const replaceFirstDigit = (str) => str.replace(/[0-9]/, "$");
+
+console.log(replaceFirstDigit("qsfhdfh4dfsq8"));
