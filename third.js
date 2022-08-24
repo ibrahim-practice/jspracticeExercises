@@ -39,6 +39,41 @@ const isAscending = (arr) => {
 console.log(isAscending([5, 9, 2, 1, 7]));
 console.log(isAscending([15, 19, 2, 31, 27]));
 console.log(isAscending([1, 2, 5, 9, 11]));
+/*
+    Write a javascript program to get the largest even 
+    number from an array of integers.
+*/
+const largestNumber = (arr) => {
+  let s = arr.sort().reverse();
+  console.log(s);
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] % 2 === 0) {
+      return s[i];
+    }
+  }
+};
+
+console.log(largestNumber([15, 19, 2, 31, 27]));
+console.log(largestNumber([15, 19, 32, 31, 28]));
+console.log(largestNumber([15, 44, 2, 31, 28]));
+
+/*
+    Write a javascript program to get the largest even 
+    number from an array of integers.
+*/
+const largestNumber = (arr) => {
+  let s = arr.sort().reverse();
+  console.log(s);
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] % 2 === 0) {
+      return s[i];
+    }
+  }
+};
+
+console.log(largestNumber([15, 19, 2, 31, 27]));
+console.log(largestNumber([15, 19, 32, 31, 28]));
+console.log(largestNumber([15, 44, 2, 31, 28]));
 
 
 
