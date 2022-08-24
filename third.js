@@ -23,3 +23,22 @@ const evenNumbers = (str) => {
 console.log(evenNumbers(7));
 console.log(evenNumbers(17));
 console.log(evenNumbers(11));
+
+
+/*
+    Write a javaScript program to check whether a given array
+    of integers is sorted in ascending order
+*/
+const isAscending = (arr) => {
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i + 1] < arr[i]) return false;
+  }
+  return true;
+};
+
+console.log(isAscending([5, 9, 2, 1, 7]));
+console.log(isAscending([15, 19, 2, 31, 27]));
+console.log(isAscending([1, 2, 5, 9, 11]));
+
+
+
